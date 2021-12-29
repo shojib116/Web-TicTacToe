@@ -4,12 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Vujahday+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
     <div id="backdrop"></div>
-    <header>
+    <header id="main-header">
         <h1>Tic Tac Toe</h1>
         <p>This is a practice for making Tic Tac Toe game!</p>
     </header>
@@ -35,6 +38,7 @@
                             <h2>Player 1</h2>
                             <h3>PLAYER NAME</h3>
                             <p class="player-symbol">X</p>
+                            <button data-playerId="1">Edit Name</button>
                         </article>
                     </li>
                     <li>
@@ -42,6 +46,7 @@
                             <h2>Player 2</h2>
                             <h3>PLAYER NAME</h3>
                             <p class="player-symbol">O</p>
+                            <button data-playerId="2">Edit Name</button>
                         </article>
                     </li>
                 </ol>
