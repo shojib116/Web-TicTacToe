@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Tic Tac Toe</title>
+</head>
+<body>
+    <div id="backdrop"></div>
+    <header>
+        <h1>Tic Tac Toe</h1>
+        <p>This is a practice for making Tic Tac Toe game!</p>
+    </header>
+    <main>
+        <aside class="modal" id="player-config-overlay">
+            <h3>Write your name!</h3>
+            <form>
+                <div>
+                    <label for="player-name">Player Name</label>
+                    <input type="text" name="player-name" id="player-name">
+                </div>
+                <div>
+                    <button type="reset">Cancel</button>
+                    <button type="submit">Submit</button>
+                </div>
+            </form>
+        </aside>
+        <section id="player-config-area">
+            <div id="player-info">
+                <ol>
+                    <li>
+                        <article>
+                            <h2>Player 1</h2>
+                            <h3>PLAYER NAME</h3>
+                            <p class="player-symbol">X</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <h2>Player 2</h2>
+                            <h3>PLAYER NAME</h3>
+                            <p class="player-symbol">O</p>
+                        </article>
+                    </li>
+                </ol>
+            </div>
+            <div id="game-session-btn">
+                <button>Start New Game</button>
+                <button>Start New Session</button>
+            </div>
+        </section>
+        <section id="scoreboard">
+            <section id="current-session-score">
+                <ol>
+                    <li>
+                        Draws : <span id="draw-score"></span>
+                    </li>
+                    <li>
+                        <span id="player-1-name">PLAYER 1</span> : <span id="player-1-score"></span>
+                    </li>
+                    <li>
+                        <span id="player-2-name">PLAYER 2</span> : <span id="player-1-score"></span>
+                    </li>
+                </ol>
+            </section>
+            <section>
+                <article id="current-game-result">
+                    <h1>You have won <span id="winner-player">PLAYER NAME</span></h1>
+                    <p>Please, click "Start New Game" to start a new game and click "Start New Session" to start a new session.</p>
+                </article>
+            </section>
+        </section>
+        <section id="gameboard">
+            <ol>
+                <li data-row="1" data-col="1"></li>
+                <li data-row="1" data-col="2"></li>
+                <li data-row="1" data-col="3"></li>
+
+                <li data-row="2" data-col="1"></li>
+                <li data-row="2" data-col="2"></li>
+                <li data-row="2" data-col="3"></li>
+
+                <li data-row="3" data-col="1"></li>
+                <li data-row="3" data-col="2"></li>
+                <li data-row="3" data-col="3"></li>
+            </ol>
+        </section>
+    </main>
+</body>
+</html>
