@@ -1,3 +1,7 @@
+html {
+    --theme-color: rgb(68, 189, 219);
+}
+
 body {
     margin: 0;
     font-family: 'Open Sans', sans-serif;
@@ -12,7 +16,7 @@ ol {
 }
 
 #main-header {
-    background-color: rgb(142, 209, 226);
+    background-color: var(--theme-color);
     margin: 0;
     padding: 1rem 5%;
     text-align: center;
@@ -28,3 +32,33 @@ ol {
     margin: 1rem 0;
 }
 
+.btn {
+    background-color: var(--theme-color);
+    font: inherit;
+    padding: 0.25rem 1rem;
+    border: 1px solid var(--theme-color);
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 .25rem;
+    font-weight: bold;
+}
+
+.btn-alt {
+    background-color: transparent;
+    border-color: transparent;
+    color: var(--theme-color);
+}
+
+.btn:hover {
+    background-color: rgb(68, 166, 196);
+}
+
+.btn-alt:hover {
+    background-color: rgb(195, 213, 230);
+}
+
+.cancel-btn:hover {
+    background-color: rgb(209, 68, 68);
+    border-color: rgb(209, 68, 68);
+    color: white;
+}

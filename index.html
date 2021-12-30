@@ -8,6 +8,8 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Vujahday+Script&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/overlays.css">
+    <link rel="stylesheet" href="styles/configuration.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
@@ -25,8 +27,8 @@
                     <input type="text" name="player-name" id="player-name">
                 </div>
                 <div>
-                    <button type="reset">Cancel</button>
-                    <button type="submit">Submit</button>
+                    <button type="reset" class="btn btn-alt cancel-btn">Cancel</button>
+                    <button type="submit" class="btn">Submit</button>
                 </div>
             </form>
         </aside>
@@ -38,7 +40,7 @@
                             <h2>Player 1</h2>
                             <h3>PLAYER NAME</h3>
                             <p class="player-symbol">X</p>
-                            <button data-playerId="1">Edit Name</button>
+                            <button data-playerId="1" class="btn btn-alt">Edit Name</button>
                         </article>
                     </li>
                     <li>
@@ -46,14 +48,14 @@
                             <h2>Player 2</h2>
                             <h3>PLAYER NAME</h3>
                             <p class="player-symbol">O</p>
-                            <button data-playerId="2">Edit Name</button>
+                            <button data-playerId="2" class="btn btn-alt">Edit Name</button>
                         </article>
                     </li>
                 </ol>
             </div>
             <div id="game-session-btn">
-                <button>Start New Game</button>
-                <button>Start New Session</button>
+                <button class="btn">Start New Game</button>
+                <button class="btn">Start New Session</button>
             </div>
         </section>
         <section id="scoreboard">
