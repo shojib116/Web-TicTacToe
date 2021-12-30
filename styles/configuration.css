@@ -60,3 +60,8 @@
     font-family: 'Vujahday Script', sans-serif;
     font-weight: bold;
 }
+
+.invalid-text {
+    color: crimson;
+    display: none;
+}

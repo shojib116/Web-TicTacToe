@@ -11,6 +11,9 @@
     <link rel="stylesheet" href="styles/overlays.css">
     <link rel="stylesheet" href="styles/configuration.css">
     <link rel="stylesheet" href="styles/game.css">
+    <script src="scripts/game.js" defer></script>
+    <script src="scripts/configuration.js" defer></script>
+    <script src="scripts/app.js" defer></script>
     <title>Tic Tac Toe</title>
 </head>
 <body>
@@ -26,10 +29,11 @@
                 <div>
                     <label for="player-name">Player Name</label>
                     <input type="text" name="player-name" id="player-name">
+                    <p class="invalid-text" id="validation-warning">Please enter a valid name</p>
                 </div>
                 <div>
-                    <button type="reset" class="btn btn-alt cancel-btn">Cancel</button>
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="reset" class="btn btn-alt cancel-btn" id="cancel">Cancel</button>
+                    <button type="submit" class="btn" id="submit">Submit</button>
                 </div>
             </form>
         </aside>
@@ -39,24 +43,23 @@
                     <li>
                         <article>
                             <h2>Player 1</h2>
-                            <h3>PLAYER NAME</h3>
+                            <h3 id="player-1-name">PLAYER NAME</h3>
                             <p class="player-symbol">X</p>
-                            <button data-playerId="1" class="btn btn-alt">Edit Name</button>
+                            <button data-playerId="1" class="btn btn-alt" id="edit-player-1-name">Edit Name</button>
                         </article>
                     </li>
                     <li>
                         <article>
                             <h2>Player 2</h2>
-                            <h3>PLAYER NAME</h3>
+                            <h3 id="player-2-name">PLAYER NAME</h3>
                             <p class="player-symbol">O</p>
-                            <button data-playerId="2" class="btn btn-alt">Edit Name</button>
+                            <button data-playerId="2" class="btn btn-alt" id="edit-player-2-name">Edit Name</button>
                         </article>
                     </li>
                 </ol>
             </div>
-            <div id="game-session-btn">
-                <button class="btn">Start New Game</button>
-                <button class="btn">Start New Session</button>
+            <div>
+                <button class="btn" id="new-session-btn">Start New Session</button>
             </div>
         </section>
         <section id="scoreboard">
@@ -76,7 +79,8 @@
             <section>
                 <article id="current-game-result">
                     <h2>You have won, <span id="winner-player">PLAYER NAME</span></h1>
-                    <p>Please, click <strong>"Start New Game"</strong> to start a new game or click <strong>"Start New Session"</strong> to start a new session.</p>
+                    <button class="btn">Start New Game</button>
+                    <p>Please, click <strong>"Start New Session"</strong> to start a new session.</p>
                 </article>
             </section>
         </section>
