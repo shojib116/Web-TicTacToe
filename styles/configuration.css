@@ -23,3 +23,40 @@
 #player-config-overlay input:focus {
     background-color: antiquewhite;
 }
+
+#player-config-area {
+    width: 90%;
+    max-width: 30rem;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+#player-config-area ol{
+    display: flex;
+}
+
+#player-config-area li {
+    margin: 1rem;
+    padding: 1rem;
+    width: 50%;
+    background-color: rgb(227, 255, 255);
+    border-radius: 4px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+}
+
+#player-config-area h2 {
+    font-size: 1rem;
+    margin: .5rem 0;
+}
+
+#player-config-area h3 {
+    font-size: 1.5rem;
+    margin: .5rem 0;
+}
+
+#player-config-area p {
+    font-size: 2rem;
+    margin: .5rem 0;
+    font-family: 'Vujahday Script', sans-serif;
+    font-weight: bold;
+}
