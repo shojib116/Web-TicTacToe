@@ -5,20 +5,21 @@
 
 #current-session-score {
     display: none;
+    
 }
 
 #current-session-score ol {
     display: flex;
     justify-content: center;
+
 }
 
 #current-session-score li {
-    margin: 0 1rem;
+    margin: 0.5rem;
     background-color: var(--theme-color);
     padding: 0.5rem 1.5rem;
     border-radius: 4px;
     font-weight: bold;
-    display: none;
 }
 
 #current-game-result {
@@ -39,7 +40,7 @@
 }
 
 #gameboard {
-    margin: 2rem 0 5rem 0;
+    margin: 2rem 0 4rem 0;
     text-align: center;
     display: none;
 }
@@ -59,6 +60,7 @@
     justify-content: center;
     align-items: center;
     font-family: 'Vujahday Script', sans-serif;
+    cursor: pointer;
 }
 
 #gameboard li:nth-of-type(1) {
@@ -95,4 +97,8 @@
 #gameboard li:nth-of-type(9) {
     border-right: transparent;
     border-bottom: transparent;
+}
+
+#gameboard li.disabled {
+    cursor: default;
 }

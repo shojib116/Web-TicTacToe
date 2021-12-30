@@ -49,6 +49,12 @@ ol {
     color: var(--theme-color);
 }
 
+.new-game {
+    color:black;
+    border: transparent;
+    background-color: white;
+}
+
 .btn:hover {
     background-color: rgb(68, 166, 196);
 }
@@ -61,5 +67,4 @@ ol {
     background-color: rgb(209, 68, 68);
     border-color: rgb(209, 68, 68);
     color: white;
-    margin: 0;
 }

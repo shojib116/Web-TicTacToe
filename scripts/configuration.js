@@ -1,4 +1,8 @@
 function openPlayerConfig(event) {
+    if (gameOngoing) {
+        alert('You can\'t change player name during the game');
+        return;
+    }
     playerConfigModalElement.style.display = 'block';
     backDropElement.style.display = 'block';
     editedPlayer = event.target.dataset.playerid;
@@ -22,9 +26,11 @@ function savePlayerName(event) {
         return;
     }
 
-    playerInfo[editedPlayer-1] = playerName;
+    playerInfo[editedPlayer-1].name = playerName;
     const playerNameElement = document.getElementById('player-'+ editedPlayer +'-name');
+    const playerNameScoreElement = document.getElementById('player-'+ editedPlayer +'-name-score');
     playerNameElement.textContent = playerName;
+    playerNameScoreElement.textContent = playerName;
 
     closePlayerConfig();
 }
