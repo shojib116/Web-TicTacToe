@@ -43,6 +43,10 @@ ol {
     font-weight: bold;
 }
 
+#game-session-btn button {
+    width: 120px;
+}
+
 .btn-alt {
     background-color: transparent;
     border-color: transparent;

@@ -1,0 +1,98 @@
+#scoreboard {
+    margin: 1rem;
+    text-align: center;
+}
+
+#current-session-score {
+    display: none;
+}
+
+#current-session-score ol {
+    display: flex;
+    justify-content: center;
+}
+
+#current-session-score li {
+    margin: 0 1rem;
+    background-color: var(--theme-color);
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    font-weight: bold;
+    display: none;
+}
+
+#current-game-result {
+    width: 40%;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 6px;
+    background-color: cornflowerblue;
+    display: none;
+}
+
+#current-game-result h2 {
+    margin: 0.5rem 0;
+}
+
+#current-game-result p {
+    margin: .5rem 0;
+}
+
+#gameboard {
+    margin: 2rem 0 5rem 0;
+    text-align: center;
+    display: none;
+}
+#gameboard ol  {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: repeat(3, 6rem);
+    grid-template-rows: repeat(3, 6rem);
+    justify-content: center;
+}
+
+#gameboard li {
+    background-color: aliceblue;
+    border: 2px solid var(--theme-color);
+    font-size: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Vujahday Script', sans-serif;
+}
+
+#gameboard li:nth-of-type(1) {
+    border-left: transparent;
+    border-top: transparent;
+}
+
+#gameboard li:nth-of-type(2) {
+    border-top: transparent;
+}
+
+#gameboard li:nth-of-type(3) {
+    border-right: transparent;
+    border-top: transparent;
+}
+
+#gameboard li:nth-of-type(4) {
+    border-left: transparent;
+}
+
+#gameboard li:nth-of-type(6) {
+    border-right: transparent;
+}
+
+#gameboard li:nth-of-type(7) {
+    border-left: transparent;
+    border-bottom: transparent;
+}
+
+#gameboard li:nth-of-type(8) {
+    border-bottom: transparent;
+}
+
+#gameboard li:nth-of-type(9) {
+    border-right: transparent;
+    border-bottom: transparent;
+}

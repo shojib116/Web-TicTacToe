@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="styles/styles.css">
     <link rel="stylesheet" href="styles/overlays.css">
     <link rel="stylesheet" href="styles/configuration.css">
+    <link rel="stylesheet" href="styles/game.css">
     <title>Tic Tac Toe</title>
 </head>
 <body>
@@ -74,12 +75,13 @@
             </section>
             <section>
                 <article id="current-game-result">
-                    <h1>You have won <span id="winner-player">PLAYER NAME</span></h1>
-                    <p>Please, click "Start New Game" to start a new game and click "Start New Session" to start a new session.</p>
+                    <h2>You have won, <span id="winner-player">PLAYER NAME</span></h1>
+                    <p>Please, click <strong>"Start New Game"</strong> to start a new game or click <strong>"Start New Session"</strong> to start a new session.</p>
                 </article>
             </section>
         </section>
         <section id="gameboard">
+            <p>It's your turn, <strong><span id="current-player-name"></span></strong></p>
             <ol>
                 <li data-row="1" data-col="1"></li>
                 <li data-row="1" data-col="2"></li>
@@ -90,8 +92,8 @@
                 <li data-row="2" data-col="3"></li>
 
                 <li data-row="3" data-col="1"></li>
-                <li data-row="3" data-col="2"></li>
-                <li data-row="3" data-col="3"></li>
+                <li data-row="3" data-col="2">O</li>
+                <li data-row="3" data-col="3">X</li>
             </ol>
         </section>
     </main>
